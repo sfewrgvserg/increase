@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+$primaty-clr-1: #272727;
+$primaty-clr-2: #ff652f;
+$primaty-clr-3: #fff;
+$primaty-clr-4: #87ceeb;
+$primaty-clr-5: #00bfff;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: spartan;
+}
+
+.css-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 10%;
+    box-shadow: 0 0 1rem ;
+    div{
+        h2{
+            span {
+                color: $primaty-clr-4;
+            }
+        }
+    }
+    .css-link{
+            @include flexCenter();
+            list-style: none;
+            a{
+                padding: 1rem;
+                text-decoration: none;
+                &:hover {
+                    transition: 0.3s;
+                    color: #00bfff;
+                }
+            }
+        }
+    .css-logo{
+        display: flex;
+        li{
+            list-style: none;
+            li:hover{
+                background-color: #ff652f;
+            }
+            a{
+                color: $primaty-clr-5;
+                padding: 0.7rem;
+                &:hover{
+                    transition: 0.3s;
+                    color: $primaty-clr-1;
+                }
+            }
+        }
+    }
+}
